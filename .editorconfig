@@ -1,0 +1,58 @@
+# Arquivo .editorconfig principal. Adicione "root = true" para que os editores
+# não continuem procurando por outros arquivos .editorconfig em diretórios pais.
+root = true
+
+# Regras globais para todos os arquivos
+[*]
+# Define o estilo de final de linha para Line Feed (padrão Unix e macOS)
+end_of_line = lf
+
+# Garante que os arquivos terminem com uma linha em branco
+insert_final_newline = true
+
+# Remove quaisquer espaços em branco no final das linhas
+trim_trailing_whitespace = true
+
+# Define o conjunto de caracteres para utf-8
+charset = utf-8
+
+# Estilo de indentação e tamanho (será sobrescrito para tipos de arquivo específicos)
+indent_style = space
+indent_size = 2
+
+# Configurações específicas para o ecossistema NodeJS (JavaScript/TypeScript)
+# Cobre JS, MJS (Módulos ES), CJS (CommonJS), JSON, TS, TSX (TS com React)
+[*.{js,mjs,cjs,json,ts,tsx}]
+# A convenção dominante em projetos NodeJS e TypeScript é usar 2 espaços.
+indent_style = space
+indent_size = 2
+
+# Configurações específicas para arquivos Go
+[*.go]
+# A comunidade Go e as ferramentas oficiais (gofmt) usam tabs para indentação.
+# O tamanho do tab é deixado para o editor do desenvolvedor configurar.
+indent_style = tab
+indent_size = 8 # Visualmente, os tabs são frequentemente representados como 8 espaços.
+
+# Configurações específicas para Makefiles
+# Use {[Mm]akefile,*.mk} para cobrir "Makefile", "makefile" e arquivos .mk
+{[Mm]akefile,*.mk}
+# Makefiles EXIGEM tabs para indentar linhas de comando dentro de uma regra.
+# Usar espaços aqui causará erros de "missing separator".
+indent_style = tab
+indent_size = 8 # Sugestão visual para a largura do tab
+
+# Configurações específicas para Dockerfiles
+[Dockerfile]
+# É uma prática comum usar 2 espaços para indentação em Dockerfiles para legibilidade.
+indent_style = space
+indent_size = 2
+
+# Configurações específicas para arquivos YAML
+[*.{yaml,yml}]
+# A especificação YAML e as práticas comuns ditam 2 espaços para indentação.
+# Tabs não são permitidos em YAML.
+indent_style = space
+indent_size = 2
+
+# Configurações para outros tipos de arquivos comuns
