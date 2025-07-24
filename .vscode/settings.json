@@ -2,5 +2,13 @@
   "go.inlayHints.parameterNames": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "literals",
-  "typescript.inlayHints.parameterNames.enabled": "literals"
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "cSpell.words": [
+    "akefile",
+    "Dockerfiles",
+    "gofmt",
+    "indentação",
+    "indentar",
+    "Makefiles"
+  ]
 }
