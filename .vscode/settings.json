@@ -6,9 +6,20 @@
   "cSpell.words": [
     "akefile",
     "Dockerfiles",
+    "github",
+    "goapp",
     "gofmt",
+    "higorrsc",
+    "hrsc",
     "indentação",
     "indentar",
-    "Makefiles"
+    "Makefiles",
+    "opentel",
+    "opentelemetry",
+    "openzipkin",
+    "otelhttp",
+    "otelmux",
+    "semconv",
+    "zipkin"
   ]
 }
